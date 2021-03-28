@@ -44,3 +44,12 @@ services:
       - 8081:8081
     depends_on:
       - redis
+      
+  openapi_generator:
+    build:
+      context: ./tools/openapi-generator
+      dockerfile: Dockerfile
+    depends_on:
+      - nestjs
+    volumes:
+      - ./tools/openapi-generator/.build:/local/out
