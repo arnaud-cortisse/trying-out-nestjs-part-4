@@ -7,9 +7,9 @@
     "prepare-dev-nestjs": "cd packages/nestjs && npm install",
     "prepare-dev-react-app": "cd packages/react-app && npm install",
     "prepare-dev-env": "npm run prepare-dev-nestjs && npm run prepare-dev-react-app",
-    "generate-api": "docker-compose up openapi_generator",
-    "update-api": "sh ./scripts/update-api.sh",
-    "generate-and-update-api": "npm run generate-api && npm run update-api"
+    "generate-api-client": "docker-compose up --build openapi_generator",
+    "update-api-client": "sh ./scripts/update-api.sh",
+    "generate-and-update-api-client": "npm run generate-api-client && npm run update-api-client"
   },
   "keywords": [],
   "author": "",
