@@ -1,0 +1,14 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare-dev-nestjs": "cd packages/nestjs && npm install",
+    "prepare-dev-react-app": "cd packages/react-app && npm install",
+    "prepare-dev-env": "npm run prepare-dev-nestjs && npm run prepare-dev-react-app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
